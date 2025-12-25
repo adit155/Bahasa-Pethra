@@ -1,1 +1,59 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Bahasa Pethra Interaktif</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #0b0f2a; color: #eee; margin: 0; padding: 0; }
+  header { background: #1a1f4d; padding: 20px; text-align: center; }
+  header h1 { margin: 0; color: #fff; }
+  main { padding: 20px; }
+  select, input, button { margin: 5px 0; padding: 5px; font-size: 16px; }
+  .output { margin-top: 20px; padding: 10px; background: #1a1f4d; border-radius: 8px; min-height: 50px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Belajar Bahasa Pethra Interaktif</h1>
+</header>
+<main>
+  <h2>Buat Kata/Kalimat Pethra</h2><label for="radikal">Pilih Radikal:</label> <select id="radikal"> <option value="1">Radikal 1 (poros)</option> <option value="2">Radikal 2 (n, ng, ny, m)</option> <option value="3">Radikal 3 (b, f, p, v, w)</option> <option value="4">Radikal 4 (H, kh, ', gh, h)</option> <option value="5">Radikal 5 (k, g, q, x, kw)</option> <option value="6">Radikal 6 (s, sw, sh, z, zh)</option> <option value="7">Radikal 7 (c, j, t, tw, th, ts, d, dw, dh)</option> </select> <br>
 
+<label for="huruf">Huruf Turunan (contoh: y, l, r):</label> <input type="text" id="huruf"> <br>
+
+<label for="sufiks">Pilih Sufiks:</label> <select id="sufiks"> <option value="">--Tidak Ada--</option> <option value="-fi">Negasi (-fi)</option> <option value="-can">Inkoatif (-can)</option> <option value="-ciu">Terminatif (-ciu)</option> <option value="-cin">Intensif (-cin)</option> <option value="-caud">Kewajiban (-caud)</option> <option value="-dai">Ingin (-dai)</option> <option value="-ja">Berulang (-ja)</option> <option value="-yua">Sedang (-yua)</option> <option value="-caf">Kausatif (-caf)</option> <option value="-daina">Resiprokal (-daina)</option> <option value="-yui">Pasif (-yui)</option> <option value="-cau">Evidensial (-cau)</option> <option value="-cany">Probabilitas (-cany)</option> <option value="-caif">Permohonan (-caif)</option> <option value="-fal">Imperatif (-fal)</option> </select> <br>
+
+<label for="kataDasar">Kata Dasar (kosakata yang tersedia):</label> <input type="text" id="kataDasar" placeholder="misal: dhi, nam, gag"> <br>
+
+<button onclick="buatKataKalimat()">Buat Kata/Kalimat</button>
+
+  <div class="output" id="output"></div>
+</main>
+<script>
+const kosakata = {
+  dhi: 'saya (l)',
+  nya: 'saya (p)',
+  thi: 'kamu (l)',
+  kia: 'kamu (p)',
+  ti: 'dia (l)',
+  shi: 'dia (p)',
+  nam: 'makan',
+  kwai: 'bicara',
+  gag: 'minum',
+  sad: 'duduk',
+  ixa: 'kursi',
+  sai: 'nasi'
+};const maknaSufiks = { '-fi':'tidak', '-can':'mulai', '-ciu':'selesai', '-cin':'intensif', '-caud':'wajib', '-dai':'ingin', '-ja':'berulang', '-yua':'sedang', '-caf':'membuat', '-daina':'saling', '-yui':'pasif', '-cau':'dilihat langsung', '-cany':'mungkin', '-caif':'permohonan', '-fal':'imperatif' };
+
+function buatKataKalimat() { const radikal = document.getElementById('radikal').value; const huruf = document.getElementById('huruf').value.trim(); const sufiks = document.getElementById('sufiks').value; const kataDasar = document.getElementById('kataDasar').value.trim();
+
+let kata = kataDasar || ''; if (huruf) kata += huruf; if (sufiks) kata += sufiks;
+
+let arti = kosakata[kataDasar] || '-'; if (sufiks) arti += (arti !== '-' ? ' + ' : '') + (maknaSufiks[sufiks] || '');
+
+let radikalInfo = 'Radikal ' + radikal; if (huruf) radikalInfo += ' + Turunan: ' + huruf;
+
+document.getElementById('output').innerHTML = '<strong>Kata/Kalimat:</strong> ' + kata + '<br><strong>Arti:</strong> ' + arti + '<br><strong>Radikal:</strong> ' + radikalInfo; } </script>
+
+</body>
+</html>

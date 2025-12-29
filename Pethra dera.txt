@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Bahasa Pethra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Materi Bahasa Pethra</h1>
+        <p>Noyasa! Selamat datang di materi lengkap bahasa Pethra.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Salam & Penutup</h2>
+            <ul>
+                <li>Noyasa – Salam pembuka</li>
+                <li>Yonasa – Salam penutup</li>
+                <li>Mekonasa – Sampai jumpa</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Kosakata Percakapan Singkat</h2>
+            <ul>
+                <li>A?, Dama, Bola?, Nad, Mad, Kad, Kald?, Maldag?, Anoa/Ana/Ana’a, Zhafan?, Maf…</li>
+                <li>Kwai – Pembicaraan</li>
+                <li>Saga – Kelanjutan</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Struktur & Aturan Dasar</h2>
+            <ul>
+                <li>Bahasa: SVO</li>
+                <li>Kata dasar dianggap nomina/maim</li>
+                <li>Sufiks <code>-ca</code> → fiza zhi (verba)</li>
+                <li>Sufiks <code>-tsa</code> → fiza sif (adjektiva)</li>
+                <li>Sufiks <code>-kak</code> → agen</li>
+                <li>Pronomina terikat: yoa</li>
+                <li>Peralihan verba intransitif → transitif (mesatsa zhi → moisatsa zhi) hanya untuk verba tertentu</li>
+                <li>Pentingnya logika: mog</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Radikal & Turunan</h2>
+            <h3>Radikal 1 (ı)</h3>
+            <ul>
+                <li>i → /j/, ï → /l/, ī → /r/</li>
+            </ul>
+
+            <h3>Radikal 2 (o)</h3>
+            <ul>
+                <li>¤ → /m/, ö → /ɲ/, ō → /ŋ/</li>
+            </ul>
+
+            <h3>Radikal 3 (ʃ)</h3>
+            <ul>
+                <li>ʃ̀ → /f/, ʃ̂ → /p/, ʃ́ → /v/, ʃ̌ → /w/</li>
+            </ul>
+
+            <h3>Radikal 4 (ɯ)</h3>
+            <ul>
+                <li>ɯ̈ → /خ/, ɯ̄ → /غ/, ɯ̆ → /ح/, ɯ̂ → /ع/</li>
+            </ul>
+
+            <h3>Radikal 5 (u)</h3>
+            <ul>
+                <li>∪ → /kʷ/, ū → /g/, ü → /q/, ⊔ → /ks/</li>
+            </ul>
+
+            <h3>Radikal 6 (c)</h3>
+            <ul>
+                <li>⊂ → /sʷ/, ⊏ → /ʃ/, č → /z/, ç → /dʒ/</li>
+            </ul>
+
+            <h3>Radikal 7 (n)</h3>
+            <ul>
+                <li>ń → /ʝ/, ń → /ɟ/, ņ → /t/, ṇ → /tʷ/, ṉ → /ts/, ṅ → /θ/, ŋ → /d/, ɳ → /dʷ/, ɲ → /ð/</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Vokal Pethra</h2>
+            <ul>
+                <li>a → ></li>
+                <li>i → -</li>
+                <li>u → ∨</li>
+                <li>e → <</li>
+                <li>o → ∧</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Aturan Transliteration & Baca</h2>
+            <ul>
+                <li>Apostrof ' → huruf poros ı</li>
+                <li>Huruf hhaf (ny, sw, dw, kw, ts, ks/x, hh) dianggap satu huruf</li>
+                <li>Tidak ada penggandaan konsonan</li>
+                <li>Aturan bantu baca: e bantu, ni/ku/su/tu/du</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Kosakata Konseptual & Logika</h2>
+            <ul>
+                <li>andarzata – makna yang megah</li>
+                <li>mog – logika</li>
+                <li>Dhi galbcia lojban dera kwa kian forgtsa dera → “Aku akan mengalahkan bahasa Lojban dan bahasa kosmik lainnya.”</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>8. Kosakata “Duduk” & “Melihat”</h2>
+            <ul>
+                <li>Duduk: sad, said, siad, sadia, dll.</li>
+                <li>Melihat: kid, ra, soneikh, milu, dll.</li>
+                <li>Tempat duduk: kato, ixa, yaf, potra, dll.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Materi Bahasa Pethra | Yonasa</p>
+    </footer>
+</body>
+</html>
